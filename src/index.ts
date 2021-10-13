@@ -225,9 +225,11 @@ function startTypeProf(folder: WorkspaceFolder) {
   const showStatus = (msg: string) => {
     statusBar.text = msg;
     statusBar.show();
+    setTimeout(() => {
+      statusBar.hide();
+    }, 3000);
   };
 
-  ////console.log(`start: ${folder}`);
   console.log(`start: ${folder.uri}`);
 
   const typeprof = getTypeProfVersion(folder, (version) => {
