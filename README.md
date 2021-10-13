@@ -31,6 +31,10 @@ not support.
 
 - `typeprof.restart`: Restart
 
+## Thanks
+
+- [ruby/typeprof](https://github.com/ruby/typeprof/)
+
 ## License
 
 MIT
